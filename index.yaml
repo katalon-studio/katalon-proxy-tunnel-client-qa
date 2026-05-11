@@ -3,12 +3,12 @@ entries:
   tunnel-client:
   - apiVersion: v2
     appVersion: 1.3.11
-    created: "2026-05-11T11:47:56.349305393Z"
+    created: "2026-05-11T11:52:50.829594487Z"
     description: A Tunnel Client Helm chart for Kubernetes
-    digest: cd51c7eaecf7792fa84a00eead717306ce8c942b6d44c4097f91f1389630d59c
+    digest: 1df575a7db787d625c00cd9edca831534cc8337f2a1b8766e96f00829a387c56
     name: tunnel-client
     type: application
     urls:
     - https://github.com/katalon-studio/katalon-proxy-tunnel-client-qa/releases/download/helm-chart-v0.1.0/tunnel-client-0.1.0.tgz
     version: 0.1.0
-generated: "2026-05-11T11:47:56.348751288Z"
+generated: "2026-05-11T11:52:50.82906767Z"
