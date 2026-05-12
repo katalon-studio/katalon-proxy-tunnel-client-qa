@@ -1,4 +1,4 @@
-# katalon-proxy-tunnel-client-dev
+# Katalon Tunnel
 
 ### Prerequisites                                                        
   - Helm 3.x                                                               
@@ -7,13 +7,13 @@
 ### 1. Add the Helm repository                                           
                                                                          
 ```sh                                                           
-helm repo add katalon-tunnel https://raw.githubusercontent.com/katalon-studio/katalon-proxy-tunnel-client-qa/refs/heads/gh-pages
+helm repo add katalon https://raw.githubusercontent.com/katalon-studio/katalon-proxy-tunnel-client-qa/refs/heads/gh-pages
 helm repo update                                                         
 ```
  
 ### 2. Install the chart                                                     
 ```                                                                
-helm install tunnel-client katalon/tunnel-client \
+helm install tunnel-client katalon/katalon-tunnel \
   --set tunnel.username="<your-email>" \
   --set tunnel.apiKey="<your-api-key>" \
   --set tunnel.accountId="<your-account-uuid>" \                           
@@ -34,13 +34,13 @@ tunnel:
 
 Then install:
 ```                                                                           
-  helm install -n <namespace> tunnel-client katalon/tunnel-client -f values.yaml 
+  helm install -n <namespace> katalon-tunnel katalon/katalon-tunnel -f values.yaml 
 ```                                                                           
 Upgrade
 ```                                                                           
-  helm upgrade -n <namespace> tunnel-client katalon/tunnel-client -f values.yaml 
+  helm upgrade -n <namespace> katalon-tunnel katalon/katalon-tunnel -f values.yaml 
 ```
 Uninstall
 ```
-  helm uninstall -n <namespace> tunnel-client
+  helm uninstall -n <namespace> katalon-tunnel
 ```
